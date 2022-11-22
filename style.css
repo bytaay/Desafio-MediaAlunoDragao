@@ -1,0 +1,238 @@
+/* Aqui estão todas os imports de CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* O seletor :root faz referência ao elemento root do DOM 
+A unidade de medida rem é relativa ao tamanho da font 
+do elemento root 
+*/
+:root{
+    /*color*/
+    --white: #fff;
+    --red: #A81C22;
+    --dark-blue: #1F2937;
+    --light-gray: rgb(107, 106, 106);
+    /*font*/
+    --font-base: 14px;
+    --font-display: 4.052rem;
+    --font-xxl: 3.052rem;
+    --font-xl: 2.441rem;
+    --font-l: 1.953rem;
+    --font-m: 1.563rem;
+    --font-s: 1.25rem;
+    --font-xs: 1.05rem;
+    /*Spacing*/
+    --space-none: 0;
+    --space-xl: 48px;
+    --space-l: 36px;
+    --space-m: 24px;
+    --space-s: 12px;
+}
+
+
+/* O seletor * é usado para aplicar estilo a todos elementos do DOM */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* A tag html é o nosso root element do DOM*/
+html {
+    font-family: sans-serif;
+    font-size: var(--font-base);
+    color: blanchedalmond;
+}
+
+
+/* O seletor body faz referência ao elemento body do DOM */
+body {
+    height: 100vh;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+/* Os seletores abaixo configuram valores pre definidos 
+dos textos da aplicação */
+.font-size--display {font-size: var(--font-display);}
+.font-size--xxl {font-size: var(--font-xxl);}
+.font-size--xl {font-size: var(--font-xl);}
+.font-size--l {font-size: var(--font-l);}
+.font-size--m {font-size: var(--font-m);}
+.font-size--s {font-size: var(--font-s);}
+.font-size--xs {font-size: var(--font-xs);}
+
+
+/* As classes abaixo configuram posicionamento de texto */
+.text-align--center {text-align: center;}
+.text-align--left {text-align: left;}
+
+
+/* Os seletores abaixo configuram valores pre definidos 
+dos espaçamentos internos e externos dos 
+elementos*/
+/*Margin*/
+.margin--none {margin: var(--space-none);}
+.margin--xl {margin: var(--space-xl);}
+.margin--l {margin: var(--space-l);}
+.margin--m {margin: var(--space-m);}
+.margin--s {margin: var(--space-s);}
+.margin-bottom--none {margin-bottom: var(--space-none);}
+.margin-bottom--xl {margin-bottom: var(--space-xl);}
+.margin-bottom--l {margin-bottom: var(--space-l);}
+.margin-bottom--m {margin-bottom: var(--space-m);}
+.margin-bottom--s {margin-bottom: var(--space-s);}
+.margin-top--none {margin-top: var(--space-none);}
+.margin-top--xl {margin-top: var(--space-xl);}
+.margin-top--l {margin-top: var(--space-l);}
+.margin-top--m {margin-top: var(--space-m);}
+.margin-top--s {margin-top: var(--space-s);}
+/*Padding*/
+.padding--none {padding: var(--space-none);}
+.padding--xl {padding: var(--space-xl);}
+.padding--l {padding: var(--space-l);}
+.padding--m {padding: var(--space-m);}
+.padding--s {padding: var(--space-s);}
+.padding-bottom--none {padding-bottom: var(--space-none);}
+.padding-bottom--xl {padding-bottom: var(--space-xl);}
+.padding-bottom--l {padding-bottom: var(--space-l);}
+.padding-bottom--m {padding-bottom: var(--space-m);}
+.padding-bottom--s {padding-bottom: var(--space-s);}
+.padding-top--none {padding-top: var(--space-none);}
+.padding-top--xl {padding-top: var(--space-xl);}
+.padding-top--l {padding-top: var(--space-l);}
+.padding-top--m {padding-top: var(--space-m);}
+.padding-top--s {padding-top: var(--space-s);}
+
+
+/* As classes abaixo configuram todas as cores pré definidas
+para serem usadas na nossa aplicação */
+.color--white {color: var(--white);}
+.background--light-gray {background-color: var(--light-gray);}
+
+
+/* As classes abaixo configuram tamanhos, altura e comprimento */
+.col--1 {width: 8.33%;}
+.col--2 {width: 16.66%;}
+.col--3 {width: 25%;}
+.col--4 {width: 33.33%;}
+.col--5 {width: 41.66%;}
+.col--6 {width: 50%;}
+.col--7 {width: 58.33%;}
+.col--8 {width: 66.66%;}
+.col--9 {width: 75%;}
+.col--10 {width: 83.33%;}
+.col--11 {width: 91.66%;}
+.col--12 {width: 100%;}
+
+
+/* Display flex*/
+.display--flex {display: flex;}
+.justify-content--center {justify-content: center;}
+.align-items--center {align-items: center;}
+
+/* Imagens */
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+.logo {
+    max-width: 300px;
+}
+
+/* Formulários da aplicação*/
+.form{
+    padding: var(--space-m);
+    max-width: 500px;
+    min-width: 500px;
+}
+.form-label {
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-size: var(--font-xs);
+}
+.form-input {
+    display: block;
+    padding: 10px 0;
+    margin-bottom: var(--space-s);
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+}
+
+/* Botões */
+.button {
+    padding: var(--space-s);
+    border: none;
+    border-radius: 4px;
+    font-size: var(--font-s);
+    text-transform: uppercase;
+    line-height: 1.48rem;
+    width: 100%;
+}
+.button:hover{
+    filter: brightness(1.25);
+    cursor: pointer;
+}
+.button-primary {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+
+
+
+/* FEITO POR MIM */
+
+#btnCalcular{
+    padding: var(--space-s);
+    border: none;
+    border-radius: 30px;
+    font-size: var(--font-s);
+    text-transform: uppercase;
+    line-height: 1.48rem;
+    width: 130%;
+    background-color: #A81C22;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20%;
+}
+
+#nota1{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+
+#nota2{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+
+#nomealuno{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 150%;
+    margin-bottom: 10%;
+}
+
+.form-label{
+    width: 100%;
+    font-size: 30px;
+    color: #fff;
+    margin: 5%;
+
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
